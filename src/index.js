@@ -1,9 +1,5 @@
 import { CatmullRomCurve3, Vector2, Vector3 } from "three";
-import { lerp } from "three/src/math/MathUtils";
-
-const easeInOutSine = (x) => {
-	return -(Math.cos(Math.PI * x) - 1) / 2;
-}
+import { easeInOutSine, lerp } from "./utils";
 
 const dummyVec = new Vector3();
 export const lerpVectorArray = (vectors = [], progress) => {

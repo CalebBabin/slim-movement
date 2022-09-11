@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CalebBabin/slim-movement/issues"
   },
-  "homepage": "https://github.com/CalebBabin/slim-movement#readme"
+  "homepage": "https://github.com/CalebBabin/slim-movement#readme",
+  "devDependencies": {
+    "three": "^0.144.0"
+  }
 }
