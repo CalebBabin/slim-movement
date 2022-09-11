@@ -11,6 +11,6 @@ animateObject3D(
     myCube, // THREE.Object3D
     [], // array of matrixes
     1000, // duration in milliseconds
-    { loop: true, closed: true } // optional configuration
+    true // uses CatmullRomCurve to smooth the path
 );
 ```
