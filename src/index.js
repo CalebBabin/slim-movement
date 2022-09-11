@@ -36,6 +36,13 @@ const animateTick = () => {
 window.requestAnimationFrame(animateTick);
 
 
+/**
+ * @param {Vector3} target 
+ * @param {Array} keyframes an array of Vector3's
+ * @param {Number} duration the duration in milliseconds
+ * @param {Boolean} smooth uses CatmullRomCurve to smooth the path if true
+ * @returns {Promise} A promise to be called when complete
+ */
 export const animateVector = (target, input_keyframes = [], duration = 1000, smooth = true) => {
     let keyframes = Array.isArray(input_keyframes) ? input_keyframes : [target.clone(), input_keyframes];
 
