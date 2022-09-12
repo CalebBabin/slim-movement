@@ -7,9 +7,9 @@ const myCube = new THREE.Mesh(
     new THREE.MeshNormalMaterial()
 );
 
-animateObject3D(
-    myCube, // THREE.Object3D
-    [], // array of matrixes
+animateVector(
+    myCube.position, // THREE.Vector3
+    [], // array of Vector3's
     1000, // duration in milliseconds
     true // uses CatmullRomCurve to smooth the path
 );
